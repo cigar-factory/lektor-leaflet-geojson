@@ -1,7 +1,8 @@
 import json
 
-from jinja2 import Markup, Template
+from jinja2 import Template
 from lektor.pluginsystem import Plugin
+from markupsafe import Markup
 
 CSS_JS = Template(
     """
