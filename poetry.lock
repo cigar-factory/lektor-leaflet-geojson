@@ -237,11 +237,11 @@ i18n = ["Babel (>=2.7)"]
 
 [[package]]
 name = "lektor"
-version = "3.2.2"
+version = "3.3.0"
 description = "A static content management system."
 category = "main"
 optional = false
-python-versions = "*"
+python-versions = ">=3.6"
 
 [package.dependencies]
 Babel = "*"
@@ -249,8 +249,8 @@ click = ">=6.0"
 EXIFRead = "*"
 filetype = ">=1.0.7"
 Flask = "*"
-inifile = "*"
-Jinja2 = ">=2.11"
+inifile = ">=0.4.1"
+Jinja2 = ">=3.0"
 mistune = ">=0.7.0,<2"
 python-slugify = "*"
 requests = {version = "*", extras = ["security"]}
@@ -259,7 +259,6 @@ Werkzeug = "<3"
 
 [package.extras]
 ipython = ["ipython"]
-test = ["pre-commit", "pylint", "pytest", "pytest-cov", "pytest-mock", "pytest-click (<1)"]
 
 [[package]]
 name = "markupsafe"
@@ -666,8 +665,8 @@ jinja2 = [
     {file = "Jinja2-3.0.2.tar.gz", hash = "sha256:827a0e32839ab1600d4eb1c4c33ec5a8edfbc5cb42dafa13b81f182f97784b45"},
 ]
 lektor = [
-    {file = "Lektor-3.2.2-py2.py3-none-any.whl", hash = "sha256:055bea2748c7e1ea085dfa0a61e3d55b25d4ab0004efe4efc73882747a6f8cdc"},
-    {file = "Lektor-3.2.2.tar.gz", hash = "sha256:7faf12235779d7fc3fa727e277ad59f2739caa8c212dcb4ac351f17387152c20"},
+    {file = "Lektor-3.3.0-py3-none-any.whl", hash = "sha256:2e411fa80c5a5874fbcb2e5302e7669736477635602c3d9beaf387878b932dd8"},
+    {file = "Lektor-3.3.0.tar.gz", hash = "sha256:5537e5543b0b0a0238ed2601e77c59944e08f0985bd4747680900abdd1ec9976"},
 ]
 markupsafe = [
     {file = "MarkupSafe-2.0.1-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:d8446c54dc28c01e5a2dbac5a25f071f6653e6e40f3a8818e8b45d790fe6ef53"},
