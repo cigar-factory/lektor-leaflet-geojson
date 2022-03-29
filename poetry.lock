@@ -233,7 +233,7 @@ i18n = ["Babel (>=2.7)"]
 
 [[package]]
 name = "lektor"
-version = "3.3.2"
+version = "3.3.3"
 description = "A static content management system."
 category = "main"
 optional = false
@@ -668,8 +668,8 @@ jinja2 = [
     {file = "Jinja2-3.0.2.tar.gz", hash = "sha256:827a0e32839ab1600d4eb1c4c33ec5a8edfbc5cb42dafa13b81f182f97784b45"},
 ]
 lektor = [
-    {file = "Lektor-3.3.2-py3-none-any.whl", hash = "sha256:cb728c48e94758f646f4da550a878333acc2560959c162ffd3a1b6d77c5ade42"},
-    {file = "Lektor-3.3.2.tar.gz", hash = "sha256:c1613983f380eb09672ce66bd0c5d8b0a5a6e519408288de0343a3fb8abb2b1e"},
+    {file = "Lektor-3.3.3-py3-none-any.whl", hash = "sha256:86444b55d5e690ee7be8f693d2c2587d0160bd3883a5e3d9bee59f83cad7f6ca"},
+    {file = "Lektor-3.3.3.tar.gz", hash = "sha256:9595b8b5c0c322f496482bb9276b859d3ba2629262cdbdf00788423efea9a043"},
 ]
 markupsafe = [
     {file = "MarkupSafe-2.0.1-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:d8446c54dc28c01e5a2dbac5a25f071f6653e6e40f3a8818e8b45d790fe6ef53"},
