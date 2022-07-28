@@ -152,8 +152,8 @@ Jinja2 = ">=3.0"
 Werkzeug = ">=2.0"
 
 [package.extras]
-async = ["asgiref (>=3.2)"]
 dotenv = ["python-dotenv"]
+async = ["asgiref (>=3.2)"]
 
 [[package]]
 name = "idna"
@@ -233,7 +233,7 @@ i18n = ["Babel (>=2.7)"]
 
 [[package]]
 name = "lektor"
-version = "3.3.5"
+version = "3.3.6"
 description = "A static content management system."
 category = "main"
 optional = false
@@ -316,8 +316,8 @@ optional = false
 python-versions = ">=3.6"
 
 [package.extras]
-docs = ["Sphinx (>=4)", "furo (>=2021.7.5b38)", "proselint (>=0.10.2)", "sphinx-autodoc-typehints (>=1.12)"]
-test = ["appdirs (==1.4.4)", "pytest (>=6)", "pytest-cov (>=2.7)", "pytest-mock (>=3.6)"]
+test = ["pytest-mock (>=3.6)", "pytest-cov (>=2.7)", "pytest (>=6)", "appdirs (==1.4.4)"]
+docs = ["sphinx-autodoc-typehints (>=1.12)", "proselint (>=0.10.2)", "furo (>=2021.7.5b38)", "Sphinx (>=4)"]
 
 [[package]]
 name = "pluggy"
@@ -331,8 +331,8 @@ python-versions = ">=3.6"
 importlib-metadata = {version = ">=0.12", markers = "python_version < \"3.8\""}
 
 [package.extras]
-dev = ["pre-commit", "tox"]
-testing = ["pytest", "pytest-benchmark"]
+testing = ["pytest-benchmark", "pytest"]
+dev = ["tox", "pre-commit"]
 
 [[package]]
 name = "py"
@@ -401,7 +401,7 @@ coverage = {version = ">=5.2.1", extras = ["toml"]}
 pytest = ">=4.6"
 
 [package.extras]
-testing = ["fields", "hunter", "process-tests", "six", "pytest-xdist", "virtualenv"]
+testing = ["virtualenv", "pytest-xdist", "six", "process-tests", "hunter", "fields"]
 
 [[package]]
 name = "python-slugify"
@@ -668,8 +668,8 @@ jinja2 = [
     {file = "Jinja2-3.0.2.tar.gz", hash = "sha256:827a0e32839ab1600d4eb1c4c33ec5a8edfbc5cb42dafa13b81f182f97784b45"},
 ]
 lektor = [
-    {file = "Lektor-3.3.5-py3-none-any.whl", hash = "sha256:e8f05dd1009c3e8d4c6c2eec3063686ae0243a9ae8775601287b1133d62a9ed2"},
-    {file = "Lektor-3.3.5.tar.gz", hash = "sha256:dfcd43cb50ed4a82ab6bdc8d2eadce63a3e62e304425399ef87ea58943514c98"},
+    {file = "Lektor-3.3.6-py3-none-any.whl", hash = "sha256:14195dd616477b41b75ffa36b308129e9afdd1700cd9cc71937c721201efc531"},
+    {file = "Lektor-3.3.6.tar.gz", hash = "sha256:9909b3cc19d18dbe8a27bfe6dbeda81593c4b582ae981d9f065ff99daf8c3e87"},
 ]
 markupsafe = [
     {file = "MarkupSafe-2.0.1-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:d8446c54dc28c01e5a2dbac5a25f071f6653e6e40f3a8818e8b45d790fe6ef53"},
