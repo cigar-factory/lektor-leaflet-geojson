@@ -388,15 +388,15 @@ MarkupSafe = ">=2.0"
 i18n = ["Babel (>=2.7)"]
 
 [[package]]
-name = "Lektor"
-version = "3.3.7"
+name = "lektor"
+version = "3.3.8"
 description = "A static content management system."
 category = "main"
 optional = false
 python-versions = ">=3.6"
 files = [
-    {file = "Lektor-3.3.7-py3-none-any.whl", hash = "sha256:311c33a41fd1eece0f73841d780a94c580969c06a42fa69ec2378dfa7d3ce44f"},
-    {file = "Lektor-3.3.7.tar.gz", hash = "sha256:db2eb3cf360dc187500f347f83ef40bd6093b5e07c3f511867bf84215d2d63f1"},
+    {file = "Lektor-3.3.8-py3-none-any.whl", hash = "sha256:9ea4bd00db9888c9dc2fb2e62f0b06e08c6ba38e5df2a3870daa36c707b95d65"},
+    {file = "Lektor-3.3.8.tar.gz", hash = "sha256:fc3ba8a178638cad5b7e94bb0746aaa41b76dd159f9e4963e39ad173aa0d472d"},
 ]
 
 [package.dependencies]
@@ -407,16 +407,18 @@ filetype = ">=1.0.7"
 Flask = "*"
 inifile = ">=0.4.1"
 Jinja2 = ">=3.0"
+markupsafe = "*"
 mistune = ">=0.7.0,<2"
 pip = "*"
 python-slugify = "*"
+pytz = "*"
 requests = {version = "*", extras = ["security"]}
 setuptools = "*"
 watchdog = "*"
 Werkzeug = "<3"
 
 [package.extras]
-ipython = ["ipython"]
+ipython = ["ipython", "traitlets"]
 
 [[package]]
 name = "markupsafe"
