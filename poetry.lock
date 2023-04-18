@@ -371,14 +371,14 @@ i18n = ["Babel (>=2.7)"]
 
 [[package]]
 name = "lektor"
-version = "3.3.8"
+version = "3.3.9"
 description = "A static content management system."
 category = "main"
 optional = false
 python-versions = ">=3.6"
 files = [
-    {file = "Lektor-3.3.8-py3-none-any.whl", hash = "sha256:9ea4bd00db9888c9dc2fb2e62f0b06e08c6ba38e5df2a3870daa36c707b95d65"},
-    {file = "Lektor-3.3.8.tar.gz", hash = "sha256:fc3ba8a178638cad5b7e94bb0746aaa41b76dd159f9e4963e39ad173aa0d472d"},
+    {file = "Lektor-3.3.9-py3-none-any.whl", hash = "sha256:332179aa8ecd709362475fcac4d09e5bdd2263618b5d7cc246b7ccc9b745a797"},
+    {file = "Lektor-3.3.9.tar.gz", hash = "sha256:0819d430aa2250e86ae2cfb7c5cae81f7425fec43b258d7227a02ad8aaee30a7"},
 ]
 
 [package.dependencies]
@@ -391,11 +391,11 @@ inifile = ">=0.4.1"
 Jinja2 = ">=3.0"
 markupsafe = "*"
 mistune = ">=0.7.0,<2"
-pip = "*"
+pip = ">=21.1"
 python-slugify = "*"
 pytz = "*"
-requests = {version = "*", extras = ["security"]}
-setuptools = "*"
+requests = "*"
+setuptools = ">=45.2"
 watchdog = "*"
 Werkzeug = "<3"
 
