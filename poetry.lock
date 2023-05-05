@@ -371,14 +371,14 @@ i18n = ["Babel (>=2.7)"]
 
 [[package]]
 name = "lektor"
-version = "3.3.9"
+version = "3.3.10"
 description = "A static content management system."
 category = "main"
 optional = false
 python-versions = ">=3.6"
 files = [
-    {file = "Lektor-3.3.9-py3-none-any.whl", hash = "sha256:332179aa8ecd709362475fcac4d09e5bdd2263618b5d7cc246b7ccc9b745a797"},
-    {file = "Lektor-3.3.9.tar.gz", hash = "sha256:0819d430aa2250e86ae2cfb7c5cae81f7425fec43b258d7227a02ad8aaee30a7"},
+    {file = "Lektor-3.3.10-py3-none-any.whl", hash = "sha256:a0d8fca269565f581d54539f213b261b615bd13426817b245b755a285b9268ad"},
+    {file = "Lektor-3.3.10.tar.gz", hash = "sha256:7c1645643a3aa0a6c8e8c13534c348299387524bd4872ce45a2aca8778e6b5b2"},
 ]
 
 [package.dependencies]
@@ -397,7 +397,7 @@ pytz = "*"
 requests = "*"
 setuptools = ">=45.2"
 watchdog = "*"
-Werkzeug = "<3"
+Werkzeug = "<2.4"
 
 [package.extras]
 ipython = ["ipython", "traitlets"]
