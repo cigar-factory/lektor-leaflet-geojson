@@ -41,12 +41,12 @@ MAP_HTML = Template(
 
 def _map(geojson, div_style):
     id_ = hash(json.dumps(geojson))
-    if type(geojson) == str:
+    if isinstance(geojson, str):
         try:
             gj_dict = json.loads(geojson)
         except json.decoder.JSONDecodeError:
             return geojson
-    elif type(geojson) == dict:
+    elif isinstance(geojson, dict):
         gj_dict = geojson
     else:
         return geojson
