@@ -352,13 +352,13 @@ i18n = ["Babel (>=2.7)"]
 
 [[package]]
 name = "lektor"
-version = "3.3.10"
+version = "3.3.11"
 description = "A static content management system."
 optional = false
 python-versions = ">=3.6"
 files = [
-    {file = "Lektor-3.3.10-py3-none-any.whl", hash = "sha256:a0d8fca269565f581d54539f213b261b615bd13426817b245b755a285b9268ad"},
-    {file = "Lektor-3.3.10.tar.gz", hash = "sha256:7c1645643a3aa0a6c8e8c13534c348299387524bd4872ce45a2aca8778e6b5b2"},
+    {file = "Lektor-3.3.11-py3-none-any.whl", hash = "sha256:a5443b777d478ffaa4a5fadc022c8e17361002487f2051e5f47e43ab9130cdea"},
+    {file = "Lektor-3.3.11.tar.gz", hash = "sha256:a6dff5eb54c3e0ed1b3ddb6ac540112391541178ae420a1c2a2704e55afe17aa"},
 ]
 
 [package.dependencies]
