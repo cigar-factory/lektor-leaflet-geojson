@@ -4,15 +4,12 @@ from jinja2 import Template
 from lektor.pluginsystem import Plugin
 from markupsafe import Markup
 
-CSS_JS = Template(
-    """
+CSS_JS = Template("""
 <link rel="stylesheet" href="https://unpkg.com/leaflet@{{ version }}/dist/leaflet.css" crossorigin=""/>
 <script src="https://unpkg.com/leaflet@{{ version }}/dist/leaflet.js" crossorigin=""></script>
-"""
-)
+""")
 
-MAP_HTML = Template(
-    """
+MAP_HTML = Template("""
 <div id="map-{{ id }}" style="{{ div_style }}"></div>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
@@ -35,18 +32,17 @@ MAP_HTML = Template(
     });
   });
 </script>
-"""
-)
+""")
 
 
 def _map(geojson, div_style):
     id_ = hash(json.dumps(geojson))
-    if type(geojson) == str:
+    if isinstance(geojson, str):
         try:
             gj_dict = json.loads(geojson)
         except json.decoder.JSONDecodeError:
             return geojson
-    elif type(geojson) == dict:
+    elif isinstance(geojson, dict):
         gj_dict = geojson
     else:
         return geojson

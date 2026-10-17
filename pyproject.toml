@@ -1,30 +1,35 @@
-[tool.poetry]
+[project]
 name = "lektor-leaflet-geojson"
 version = "0.2.0"
 description = "Lektor template filter to convert geojson objects to Leaflet maps"
-authors = ["chris48s"]
+authors = [{name = "chris48s"}]
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/cigar-factory/lektor-leaflet-geojson"
 keywords = ["Lektor plugin"]
+requires-python = ">=3.11"
+dependencies = [
+    "lektor==3.*"
+]
 classifiers = [
     "Framework :: Lektor",
     "Environment :: Plugins",
 ]
 
-[tool.poetry.dependencies]
-python = ">=3.7"
-lektor = "3.*"
+[project.urls]
+Source = "https://github.com/cigar-factory/lektor-leaflet-geojson"
 
-[tool.poetry.dev-dependencies]
-isort = "^5.11"
-flake8 = "^5.0.4"
-black = "==23.3.0"
-pytest = "^7.4.4"
-pytest-cov = "^4.1.0"
+[tool.poetry.group.dev.dependencies]
+isort = "9.0.2"
+flake8 = "7.4.1"
+black = "26.10.1"
+pytest = "9.1.1"
+pytest-cov = "7.1.0"
+
+[tool.poetry]
+requires-poetry = ">=2.0"
 
 [build-system]
-requires = ["poetry>=1.0.2"]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.plugins."lektor.plugins"]

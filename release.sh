@@ -45,13 +45,5 @@ git commit -m "version $VERSION"
 # tag
 git tag "$VERSION"
 
-# build and push to PyPI
-poetry install
-poetry build
-poetry publish
-
 # push to GitHub
 git push origin "$(git branch --show-current)" --tags
-
-# cleanup
-rm -rf dist/
